@@ -1,0 +1,37 @@
+{
+  "backtest": {
+    "folds": 3,
+    "horizon_days": 28,
+    "series": 500
+  },
+  "wape": {
+    "seasonal_naive": 0.6144,
+    "weekday_average": 0.4991,
+    "gradient_boosting": 0.4249
+  },
+  "bias": {
+    "seasonal_naive": 0.0453,
+    "weekday_average": 0.0574,
+    "gradient_boosting": -0.0009
+  },
+  "best_baseline": "weekday_average",
+  "wape_reduction_vs_best_baseline": 0.14859004995042557,
+  "promo_day_wape": {
+    "seasonal_naive": 0.5533,
+    "weekday_average": 0.4854,
+    "gradient_boosting": 0.4021
+  },
+  "excess_inventory_reduction_vs_best_baseline": 0.20434584228914332,
+  "excess_inventory_value": {
+    "seasonal_naive": 2816587.0,
+    "weekday_average": 2415547.0,
+    "gradient_boosting": 1921940.0
+  },
+  "top_features": [
+    "roll_mean_28",
+    "roll_mean_91",
+    "item_id",
+    "dow",
+    "discount_pct"
+  ]
+}
